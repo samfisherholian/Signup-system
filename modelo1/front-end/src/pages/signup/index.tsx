@@ -10,7 +10,7 @@ export default function Signup(){
     async function handleSubmit(e: React.FormEvent){
         e.preventDefault()
 
-        const response = await fetch("http://localhost/modelo2/api/signup/signup.php", {
+        const response = await fetch("http://localhost/Signup-system/modelo1/api/signup/signup.php", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({username, pwd, email}),
